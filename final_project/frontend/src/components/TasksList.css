@@ -1,0 +1,142 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tasks-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0 5px;
+}
+
+.tasks-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  flex: 1;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.tasks-header button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6a11cb;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.tasks-header button:hover {
+  background-color: #5b0fbf;
+}
+
+.task-form {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.task-form input:focus {
+  outline: none;
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106,17,203,0.4);
+}
+
+.task-form button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #6a11cb;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #5b0fbf;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.task-row:hover {
+  background-color: rgba(106,17,203,0.05);
+}
+
+.task-row .task-text {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.task-row input[type="checkbox"] {
+  transform: scale(1.3);
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
